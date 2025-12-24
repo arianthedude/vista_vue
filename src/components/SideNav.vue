@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-48 overflow-hidden   min-h-screen flex flex-col">
+  <aside class="bg-white overflow-hidden min-h-screen flex flex-col">
     <div class="flex p-5 mt-5 pb-20 gap-1 items-center">
       <IconAvocado class="w-5 text-green-400" />
       <h2 class="font-semibold text-lg">avoburger</h2>
@@ -38,21 +38,21 @@
         </li>
       </ul>
     </nav>
-    <div class="flex flex-col items-center justify-center ">
+    <div class="flex flex-col items-center justify-center">
       <p class="text-sm my-3 text-gray-500">Done for the day?</p>
-      <PrimaryBtn class=" mx-5 mb-5">
+      <PrimaryBtn class="mx-5 mb-5">
         <IconSend class="inline w-4 mr-2" />
         <span>Send daily report</span>
       </PrimaryBtn>
     </div>
-    <div class="profile py-5 px-5 border-t w-full flex items-center ">
-        <UserProfile
-          :user="{
-            name: 'name here',
-            role: 'Administrator',
-            avatar: userAvatar,
-          }"
-        />
+    <div class="profile py-5 px-5 border-t w-full flex items-center">
+      <UserProfile
+        :user="{
+          name: 'name here',
+          role: 'Administrator',
+          avatar: userAvatar,
+        }"
+      />
     </div>
   </aside>
 </template>
@@ -67,8 +67,7 @@ import IconDrivers from '@/assets/icons/driver.svg'
 import PrimaryBtn from './PrimaryBtn.vue'
 import IconSend from '@/assets/icons/send.svg'
 import UserProfile from './UserProfile.vue'
-import userAvatar from "@/assets/images/user.webp";
-
+import userAvatar from '@/assets/images/user.webp'
 </script>
 
 <style scoped>

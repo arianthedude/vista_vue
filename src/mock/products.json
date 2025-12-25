@@ -1,10 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Laptop",
-    "categoryId": 1,
-    "tags": ["tech", "computer"],
-    "price": 1200,
-    "image": "/laptop.png"
+    "title": "Shrimp Burger",
+    "weight": 350,
+    "description": "Wheat bun, crispy shrimps, pickles, seafood sauce",
+    "price": 17.99,
+    "vegan": false,
+    "img": "src/assets/images/burger-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Classic Beef Burger",
+    "weight": 400,
+    "description": "Brioche bun, grilled beef patty, cheddar cheese, lettuce, tomato, house sauce",
+    "price": 15.49,
+    "vegan": false,
+    "img": "src/assets/images/burger-1.png"
+  },
+  {
+    "id": 3,
+    "title": "Chicken Crispy Burger",
+    "weight": 380,
+    "description": "Sesame bun, crispy chicken fillet, lettuce, pickles, spicy mayo",
+    "price": 14.99,
+    "vegan": true,
+    "img": "src/assets/images/burger-1.png"
+  },
+  {
+    "id": 4,
+    "title": "Double Cheese Burger",
+    "weight": 450,
+    "description": "Brioche bun, double beef patties, double cheddar, caramelized onions, cheese sauce",
+    "price": 18.99,
+    "vegan": false,
+    "img": "src/assets/images/burger-1.png"
+  },
+  {
+    "id": 5,
+    "title": "Veggie Burger",
+    "weight": 330,
+    "description": "Whole wheat bun, grilled vegetable patty, lettuce, tomato, avocado sauce",
+    "price": 13.49,
+    "vegan": true,
+    "img": "src/assets/images/burger-1.png"
+  },
+  {
+    "id": 6,
+    "title": "Spicy BBQ Burger",
+    "weight": 420,
+    "description": "Potato bun, beef patty, bacon, onion rings, spicy BBQ sauce",
+    "price": 16.99,
+    "vegan": false,
+    "img": "src/assets/images/burger-1.png"
   }
 ]

@@ -1,8 +1,8 @@
 <template>
   <div>
     <main class="grid grid-cols-12 h-full w-full">
-      <side-nav class="col-span-4" />
-      <div class="col-span-8 ">
+      <side-nav class="hidden lg:col-span-2" />
+      <div class="md:col-span-10 col-span-12 ">
         <header class="px-5">
             <search-bar />
         </header>

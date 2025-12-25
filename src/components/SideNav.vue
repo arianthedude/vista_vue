@@ -1,5 +1,5 @@
 <template>
-  <aside class="bg-white overflow-hidden min-h-screen flex flex-col">
+  <aside class="hidden lg:flex bg-white overflow-hidden min-h-screen flex-col">
     <div class="flex p-5 mt-5 pb-20 gap-1 items-center">
       <IconAvocado class="w-5 text-green-400" />
       <h2 class="font-semibold text-lg">avoburger</h2>

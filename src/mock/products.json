@@ -52,5 +52,14 @@
     "price": 16.99,
     "vegan": false,
     "img": "src/assets/images/burger-1.png"
+  },
+    {
+    "id": 5,
+    "title": "Veggie Burger",
+    "weight": 330,
+    "description": "Whole wheat bun, grilled vegetable patty, lettuce, tomato, avocado sauce",
+    "price": 13.49,
+    "vegan": true,
+    "img": "src/assets/images/burger-1.png"
   }
 ]

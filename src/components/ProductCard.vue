@@ -11,15 +11,19 @@
     </div>
     <p class="font-bold text-lg">{{ product.title }}</p>
     <span class="text-sm text-gray-500">{{ product.weight }}g</span>
-    <p class="text-sm flex-1 px-4 text-gray-700">{{ product.description }}</p>
+    <p class="text-sm flex-1 px-4 text-gray-700 md:overflow-visible text-wrap      truncate   w-full">{{ product.description }}</p>
     <div class="flex w-full pt-4 justify-between">
       <p class="text-xl font-medium">${{ product.price }}</p>
       <div class="flex justify-center items-center gap-2">
-        <div class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer">
-          <IconSettings class="w-4 h-4 fill-gray-800 " />
-        </div>
-        <div class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer">
+        <div
+          class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer"
+        >
           <IconView class="w-4 h-4 fill-gray-800" />
+        </div>
+        <div
+          class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer"
+        >
+          <IconSettings class="w-4 h-4 fill-gray-800" />
         </div>
       </div>
     </div>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "French Fries",
+    "weight": 180,
+    "description": "Crispy golden fries with sea salt",
+    "price": 4.99,
+    "vegan": true,
+    "img": "src/assets/images/side-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Sweet Potato Fries",
+    "weight": 200,
+    "description": "Sweet potato fries served with garlic mayo",
+    "price": 5.99,
+    "vegan": false,
+    "img": "src/assets/images/side-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Onion Rings",
+    "weight": 170,
+    "description": "Crispy battered onion rings with house dip",
+    "price": 5.49,
+    "vegan": false,
+    "img": "src/assets/images/side-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Coleslaw",
+    "weight": 150,
+    "description": "Fresh cabbage, carrots, creamy dressing",
+    "price": 3.99,
+    "vegan": false,
+    "img": "src/assets/images/side-4.png"
+  },
+  {
+    "id": 5,
+    "title": "Side Salad",
+    "weight": 160,
+    "description": "Mixed greens, cherry tomatoes, lemon vinaigrette",
+    "price": 4.49,
+    "vegan": true,
+    "img": "src/assets/images/side-5.png"
+  },
+  {
+    "id": 6,
+    "title": "Mozzarella Sticks",
+    "weight": 190,
+    "description": "Fried mozzarella sticks served with marinara sauce",
+    "price": 6.49,
+    "vegan": false,
+    "img": "src/assets/images/side-6.png"
+  }
+]

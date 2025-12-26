@@ -1,17 +1,10 @@
 <template>
-  <div
-    v-for="value in filteredItems"
-    :key="value.id"
-    class="col-span-6 lg:col-span-3"
-  >
+  <div v-for="value in filteredItems" :key="value.id" class="col-span-6 lg:col-span-3">
     <ProductCard :product="value" />
   </div>
 
-  <!-- Add new product -->
   <div
-    class="border-2 cursor-pointer border-gray-400/50 text-gray-700
-           col-span-6 rounded-xl lg:col-span-3 h-full
-           flex flex-col justify-center items-center"
+    class="border-2 cursor-pointer min-h-60 border-gray-400/50 text-gray-700 col-span-6 rounded-xl lg:col-span-3 h-full flex flex-col justify-center items-center"
     @click="generalStore.openDrawer()"
   >
     <p class="text-xl font-bold">+</p>
@@ -38,9 +31,7 @@ const filteredItems = computed(() => {
   const q = props.search.toLowerCase()
 
   return productStore.items.filter(
-    item =>
-      item.title.toLowerCase().includes(q) ||
-      item.description.toLowerCase().includes(q)
+    (item) => item.title.toLowerCase().includes(q) || item.description.toLowerCase().includes(q),
   )
 })
 </script>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Cola",
+    "weight": 330,
+    "description": "Classic chilled cola served with ice",
+    "price": 2.99,
+    "vegan": true,
+    "img": "src/assets/images/drink-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Orange Juice",
+    "weight": 300,
+    "description": "Freshly squeezed orange juice",
+    "price": 3.49,
+    "vegan": true,
+    "img": "src/assets/images/drink-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Lemonade",
+    "weight": 300,
+    "description": "Homemade lemonade with fresh lemons",
+    "price": 3.29,
+    "vegan": true,
+    "img": "src/assets/images/drink-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Iced Tea",
+    "weight": 330,
+    "description": "Cold brewed black tea with a hint of lemon",
+    "price": 3.19,
+    "vegan": true,
+    "img": "src/assets/images/drink-4.png"
+  },
+  {
+    "id": 5,
+    "title": "Milkshake Vanilla",
+    "weight": 400,
+    "description": "Creamy vanilla milkshake topped with whipped cream",
+    "price": 4.99,
+    "vegan": false,
+    "img": "src/assets/images/drink-5.png"
+  },
+  {
+    "id": 6,
+    "title": "Sparkling Water",
+    "weight": 330,
+    "description": "Chilled sparkling mineral water",
+    "price": 2.49,
+    "vegan": true,
+    "img": "src/assets/images/drink-6.png"
+  }
+]

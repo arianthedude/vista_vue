@@ -1,8 +1,10 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
+
 export const useGeneralStore = defineStore('general', () => {
   const isDrawerOpen = ref(false)
+  const activeTab = ref('MainCourseTab')
 
   function openDrawer() {
     isDrawerOpen.value = true
@@ -16,5 +18,5 @@ export const useGeneralStore = defineStore('general', () => {
     isDrawerOpen.value = !isDrawerOpen.value
   }
 
-  return { isDrawerOpen, openDrawer, closeDrawer, toggleDrawer }
+  return { activeTab, isDrawerOpen, openDrawer, closeDrawer, toggleDrawer }
 })

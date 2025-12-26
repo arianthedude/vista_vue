@@ -1,6 +1,4 @@
 <script setup>
-import DefaultLayout from '@/components/DefaultLayout.vue';
-import MainView from '../components/MainView.vue'
 import SideNav from '@/components/SideNav.vue';
 </script>
 

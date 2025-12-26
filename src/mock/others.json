@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Ketchup Sauce",
+    "weight": 40,
+    "description": "Classic tomato ketchup sachet",
+    "price": 0.99,
+    "vegan": true,
+    "img": "src/assets/images/other-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Mayonnaise Sauce",
+    "weight": 40,
+    "description": "Creamy mayonnaise dip",
+    "price": 0.99,
+    "vegan": false,
+    "img": "src/assets/images/other-2.png"
+  },
+  {
+    "id": 3,
+    "title": "BBQ Sauce",
+    "weight": 40,
+    "description": "Smoky barbecue sauce",
+    "price": 1.09,
+    "vegan": true,
+    "img": "src/assets/images/other-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Garlic Dip",
+    "weight": 50,
+    "description": "Creamy garlic dip with herbs",
+    "price": 1.29,
+    "vegan": false,
+    "img": "src/assets/images/other-4.png"
+  },
+  {
+    "id": 5,
+    "title": "Extra Cheese",
+    "weight": 60,
+    "description": "Additional melted cheddar cheese",
+    "price": 1.99,
+    "vegan": false,
+    "img": "src/assets/images/other-5.png"
+  },
+  {
+    "id": 6,
+    "title": "Pickles",
+    "weight": 50,
+    "description": "Extra sliced pickles",
+    "price": 0.79,
+    "vegan": true,
+    "img": "src/assets/images/other-6.png"
+  }
+]

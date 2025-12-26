@@ -6,7 +6,7 @@
     "description": "Wheat bun, crispy shrimps, pickles, seafood sauce",
     "price": 17.99,
     "vegan": false,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "Brioche bun, grilled beef patty, cheddar cheese, lettuce, tomato, house sauce",
     "price": 15.49,
     "vegan": false,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Sesame bun, crispy chicken fillet, lettuce, pickles, spicy mayo",
     "price": 14.99,
     "vegan": true,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "Brioche bun, double beef patties, double cheddar, caramelized onions, cheese sauce",
     "price": 18.99,
     "vegan": false,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Whole wheat bun, grilled vegetable patty, lettuce, tomato, avocado sauce",
     "price": 13.49,
     "vegan": true,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Potato bun, beef patty, bacon, onion rings, spicy BBQ sauce",
     "price": 16.99,
     "vegan": false,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   },
     {
     "id": 5,
@@ -60,6 +60,6 @@
     "description": "Whole wheat bun, grilled vegetable patty, lettuce, tomato, avocado sauce",
     "price": 13.49,
     "vegan": true,
-    "img": "src/assets/images/burger-1.png"
+    "img": "/burger1.png"
   }
 ]

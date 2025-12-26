@@ -9,14 +9,13 @@ import { useGeneralStore } from './general'
 
 export const useProductStore = defineStore('products', () => {
   const generalStore = useGeneralStore()
+  const mode = ref('add')
 
-  // 🔹 Data per tab
   const mainCourseItems = ref([...mainCourses])
   const sideDishItems = ref([...sideDishes])
   const drinkItems = ref([...drinks])
   const otherItems = ref([...others])
 
-  // 🔹 Map tab name → items
   const items = computed(() => {
     switch (generalStore.activeTab) {
       case 'MainCourseTab':
@@ -44,6 +43,8 @@ export const useProductStore = defineStore('products', () => {
   })
 
   function resetForm() {
+    editingId.value = null
+    mode.value = 'add'
     Object.assign(form, {
       title: '',
       weight: 0,
@@ -52,30 +53,29 @@ export const useProductStore = defineStore('products', () => {
       vegan: false,
       img: 'src/assets/images/burger-1.png',
     })
-    editingId.value = null
   }
 
   function startEdit(product) {
+    mode.value = 'edit'
+    editingId.value = product.id
+    Object.assign(form, product)
+  }
+
+  function startView(product) {
+    mode.value = 'view'
     editingId.value = product.id
     Object.assign(form, product)
   }
 
   function saveProduct() {
-    if (editingId.value === null) {
-      items.value.push({
-        id: Date.now(),
-        ...form,
-      })
-    } else {
-      const index = items.value.findIndex(
-        item => item.id === editingId.value
-      )
+    if (mode.value === 'view') return
 
+    if (editingId.value === null) {
+      items.value.push({ id: Date.now(), ...form })
+    } else {
+      const index = items.value.findIndex(i => i.id === editingId.value)
       if (index !== -1) {
-        items.value[index] = {
-          ...items.value[index],
-          ...form,
-        }
+        items.value[index] = { ...items.value[index], ...form }
       }
     }
 
@@ -83,11 +83,12 @@ export const useProductStore = defineStore('products', () => {
   }
 
   return {
-    // exposed
+    mode,
     items,
     form,
     editingId,
     startEdit,
+    startView,
     saveProduct,
     resetForm,
   }

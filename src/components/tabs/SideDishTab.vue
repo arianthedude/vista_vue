@@ -5,7 +5,7 @@
 
   <div
     class="border-2 cursor-pointer min-h-60 border-gray-400/50 text-gray-700 col-span-6 rounded-xl lg:col-span-3 h-full flex flex-col justify-center items-center"
-    @click="generalStore.openDrawer()"
+    @click="generalStore.openDrawer(), productStore.resetForm()"
   >
     <p class="text-xl font-bold">+</p>
     <p class="text-xl font-bold text-center">Add new product</p>

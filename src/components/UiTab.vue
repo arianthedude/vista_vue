@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Tabs -->
     <div class="flex ps-10 bg-white p-5 mt-10 rounded-2xl gap-8">
       <button
         v-for="(tab, index) in tabs"
@@ -24,7 +23,6 @@
       </button>
     </div>
 
-    <!-- Active Tab Content -->
     <div class="grid grid-cols-12 mt-10 w-full gap-5">
       <component :is="activeComponent" :search="search" />
     </div>
@@ -55,7 +53,7 @@ const tabs = [
 ]
 
 const activeComponent = computed(() => {
-  return tabs.find(tab => tab.name === generalStore.activeTab)?.component
+  return tabs.find((tab) => tab.name === generalStore.activeTab)?.component
 })
 
 function setTab(name) {

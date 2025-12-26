@@ -18,14 +18,16 @@
       <p class="text-xl font-medium">${{ product.price }}</p>
       <div class="flex justify-center items-center gap-2">
         <div
+          @click="view"
           class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer"
         >
           <IconView class="w-4 h-4 fill-gray-800" />
         </div>
         <div
+          @click="edit"
           class="border rounded-md py-2 px-3 border-gray-300 flex justify-center items-center cursor-pointer"
         >
-          <IconSettings @click="edit" class="w-4 h-4 fill-gray-800" />
+          <IconSettings class="w-4 h-4 fill-gray-800" />
         </div>
       </div>
     </div>
@@ -42,7 +44,7 @@ import { useGeneralStore } from '@/stores/general'
 const productStore = useProductStore()
 const generalStore = useGeneralStore()
 
-const props =defineProps({
+const props = defineProps({
   product: {
     type: Object,
     required: true,
@@ -51,6 +53,11 @@ const props =defineProps({
 
 function edit() {
   productStore.startEdit(props.product)
+  generalStore.openDrawer()
+}
+
+function view() {
+  productStore.startView(props.product)
   generalStore.openDrawer()
 }
 </script>

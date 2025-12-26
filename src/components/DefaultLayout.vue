@@ -8,14 +8,13 @@
         </header>
         <ui-tab :search="search" />
       </div>
-      <!-- Overlay -->
+      
       <div
         v-if="generalStore.isDrawerOpen"
         class="fixed inset-0 bg-black/40 z-40"
         @click="generalStore.isDrawerOpen = false"
       />
 
-      <!-- Drawer -->
       <div
         class="fixed top-0 right-0 h-full w-full sm:w-105 bg-white z-50 transform transition-transform duration-300"
         :class="generalStore.isDrawerOpen ? 'translate-x-0' : 'translate-x-full'"

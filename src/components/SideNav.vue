@@ -38,9 +38,9 @@
         </li>
       </ul>
     </nav>
-    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col mx-4 items-center justify-center">
       <p class="text-sm my-3 text-gray-500">Done for the day?</p>
-      <PrimaryBtn class="mx-5 mb-5">
+      <PrimaryBtn class="w-full mb-5">
         <IconSend class="inline w-4 mr-2" />
         <span>Send daily report</span>
       </PrimaryBtn>
